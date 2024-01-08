@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+    font-size: 1.2rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer {
+    margin: 30px;
+    color: green;
+    width: 0px;
+    height: 0px;
+    font-size: large;
+    margin-top: auto;
+}
+
+.logo-link {
+    font: size 1.8rem;
+    color:rgb(5, 6, 116);
+    padding-left: 20px;
+}
+
+.logo {
+    width: 185px;
+    height: 30px;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor:pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    margin-left: 150px;
+    
+}
+
+.nav_link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: teal;
+}
+
+.nav_link a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav_link a:hover {
+    background-color: lightcoral;
+}
+
+
+.hide {
+    display: none;
+}
+.custom-button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+    .nav_link {
+        display:block;
+        text-align: center;
+        position:static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+    
+    
+    .nav_link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+}
+
+.title-banner {
+    background-color: teal;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {padding: 15px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+/*Media queries */
+@media screen and (min-width: 768px) {
+    .item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .item {
+        width: 30%;
+    }
+}
